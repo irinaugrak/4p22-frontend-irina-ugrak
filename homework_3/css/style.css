@@ -64,12 +64,57 @@ td, th {
 }
 
 .cell-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 55px;
     width: 100px;
-    
+    border-radius: 7px;
+    padding: 5px;
 }
 
-.element-props {
+.cell-5 {
+    position: relative;
+    border-radius: 7px;
+    padding: 5px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 55px;
+    width: 60px;
+}
+
+.cell-6 {
+    position: relative;
+    border-radius: 7px;
+    padding: 5px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 55px;
+    width: 100px;
+}
+
+.cell-7 {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.cell-8 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cell-6-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cell-props {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -77,45 +122,79 @@ td, th {
     height: 100%;
 }
 
-.element-title {
+.cell-title {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    align-self: flex-start;
     height: 100%;
 }
 
-.element-title__symbol {
+.cell-dash {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cell-star {
+    position: absolute;
+    bottom: -5px;
+    font-size: 20px;
+}
+
+.cell-synum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cell-symbol {
     font-weight: bold;
     font-size: 26px;
     text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
                  0px -5px 35px rgba(255,255,255,0.3);
 }
 
-.element-title__name {
+.cell-name {
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 9px;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
                  0px 8px 13px rgba(0,0,0,0.1),
                  0px 18px 23px rgba(0,0,0,0.1);
 }
 
-.element__formula {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.element-props__number {
+.cell-number {
     font-weight: bold;
     font-size: 14px;
 }
 
-.element-props__weight {
+.cell-5__number {
+    position: absolute;
+    top: 5px;
+    right: 5px;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 14px;
 }
 
+.cell-weight {
+    font-weight: bold;
+    font-size: 10px;
+    align-self: flex-end;
+}
 
+.cell-formula {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cell-isotop {
+    font-weight: bold;
+    font-size: 11px;
+    align-self: flex-end;
+    color: #BD2953;
+}
 
 
