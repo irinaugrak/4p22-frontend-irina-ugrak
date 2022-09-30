@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #126158;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
