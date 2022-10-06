@@ -1,0 +1,22 @@
+{
+  "name": "4p22-frontend-irina-ugrak",
+  "version": "1.0.0",
+  "description": "innopolis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irinaugrak/4p22-frontend-irina-ugrak.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irinaugrak/4p22-frontend-irina-ugrak/issues"
+  },
+  "homepage": "https://github.com/irinaugrak/4p22-frontend-irina-ugrak#readme",
+  "dependencies": {
+    "scss-reset": "^1.2.2"
+  }
+}
