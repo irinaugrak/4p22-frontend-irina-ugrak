@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/irinaugrak/4p22-frontend-irina-ugrak#readme",
   "dependencies": {
+    "normalize-scss": "^7.0.1",
     "scss-reset": "^1.2.2"
   }
 }
