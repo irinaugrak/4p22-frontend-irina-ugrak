@@ -1,6 +1,22 @@
 .main {
     padding-top: 140px;
-    background-color: $white;
+    background-color: $color-white;
+
+    &-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__sidebar {
+            position: relative;
+            flex: 1 1 30%;
+            align-self: flex-start;
+        }
+
+        &__content {
+            flex: 1 1 70%;
+        }
+    }
 
     &-sidebar {
         &__links {
@@ -57,24 +73,8 @@
             }
 
             &:hover {
-                color: #02C0D8;
+                color: $color-blue;
             }
-        }
-    }
-
-    &-inner {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        &__sidebar {
-            position: relative;
-            flex: 1 1 30%;
-            align-self: flex-start;
-        }
-
-        &__content {
-            flex: 1 1 70%;
         }
     }
 }
@@ -94,11 +94,11 @@
     }
 
     &__item:nth-child(even) {
-        background-color: #EDEFEC;
+        background-color: $color-light-grey;
     }
 
     &__title {
-        background-color: #02C0D8;
+        background-color: $color-blue;
         position: sticky;
         top: 140px;
         padding: 10px;

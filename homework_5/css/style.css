@@ -626,48 +626,48 @@ body {
   justify-content: flex-start;
   align-items: center;
   background-color: #02C0D8;
-  background-image: linear-gradient(to bottom right, white, #02C0D8);
+  background-image: linear-gradient(to bottom right, #fff, #02C0D8);
   height: 80px;
+}
+.header__top-inner {
+  display: flex;
+  align-items: center;
+}
+.header__top-logo {
+  margin-right: 20px;
+}
+.header__top-title {
+  font-size: 52px;
 }
 .header__bottom {
   background-color: #fff;
 }
-.header-top__inner {
-  display: flex;
-  align-items: center;
-}
-.header-top__logo {
-  margin-right: 20px;
-}
-.header-top__title {
-  font-size: 52px;
-}
-.header-bottom__inner {
+.header__bottom-inner {
   display: flex;
   height: 60px;
   z-index: 2;
 }
-.header-bottom__pointer {
+.header__bottom-pointer {
   flex: 1 1 100%;
 }
-.header-bottom__letters {
+.header__bottom-letters {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
   font-weight: 600;
 }
-.header-bottom__anchor {
+.header__bottom-anchor {
   text-decoration: none;
   color: #333;
 }
-.header-bottom__anchor:hover {
+.header__bottom-anchor:hover {
   color: #02C0D8;
 }
-.header-bottom__letter {
+.header__bottom-letter {
   cursor: pointer;
   font-size: 16px;
 }
-.header-bottom__letter.inactive {
+.header__bottom-letter.inactive {
   cursor: default;
   color: #b6bbb3;
 }
@@ -675,6 +675,19 @@ body {
 .main {
   padding-top: 140px;
   background-color: #fff;
+}
+.main-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-inner__sidebar {
+  position: relative;
+  flex: 1 1 30%;
+  align-self: flex-start;
+}
+.main-inner__content {
+  flex: 1 1 70%;
 }
 .main-sidebar__links {
   position: fixed;
@@ -723,19 +736,6 @@ body {
 }
 .main-sidebar__link:hover {
   color: #02C0D8;
-}
-.main-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.main-inner__sidebar {
-  position: relative;
-  flex: 1 1 30%;
-  align-self: flex-start;
-}
-.main-inner__content {
-  flex: 1 1 70%;
 }
 
 .content__page {

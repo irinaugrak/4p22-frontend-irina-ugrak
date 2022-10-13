@@ -1,5 +1,4 @@
 .header {
-
     position: fixed;
     width: 100%;
     z-index: 2;
@@ -8,64 +7,60 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        background-color: #02C0D8;
-        background-image: linear-gradient(to bottom right, white, #02C0D8);
+        background-color: $color-blue;
+        background-image: linear-gradient(to bottom right, $color-white, $color-blue);
         height: 80px;
-    }
 
-    &__bottom {
-        background-color: $white;
-    }
-
-    &-top {
-        &__inner {
+        &-inner {
             display: flex;
             align-items: center;
         }
 
-        &__logo {
+        &-logo {
             margin-right: 20px;
         }
 
-        &__title {
+        &-title {
             font-size: 52px;
         }
     }
  
-    &-bottom {
-        &__inner {
+    &__bottom {
+        background-color: $color-white;
+
+        &-inner {
             display: flex;
             height: 60px;
             z-index: 2;
         }
 
-        &__pointer {
+        &-pointer {
             flex: 1 1 100%;
         }
 
-        &__letters {
+        &-letters {
             display: flex;
             justify-content: space-between;
             padding: 20px 0;
             font-weight: 600;
         }
 
-        &__anchor {
+        &-anchor {
             text-decoration: none; 
             color: $color-main;
 
             &:hover {
-                color: #02C0D8;
+                color: $color-blue;
             }
         }
 
-        &__letter {
+        &-letter {
             cursor: pointer;
             font-size: 16px;
             
             &.inactive {
                 cursor: default;
-                color: #b6bbb3;
+                color: $color-grey;
             }
         }
     }
