@@ -58,7 +58,7 @@
             cursor: pointer;
             font-size: 16px;
             
-            &.inactive {
+            &_inactive {
                 cursor: default;
                 color: $color-grey;
             }
