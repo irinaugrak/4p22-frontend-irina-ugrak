@@ -667,7 +667,7 @@ body {
   cursor: pointer;
   font-size: 16px;
 }
-.header__bottom-letter.inactive {
+.header__bottom-letter_inactive {
   cursor: default;
   color: #b6bbb3;
 }
