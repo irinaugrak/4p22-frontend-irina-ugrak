@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Форма входа</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="wrapper">
+                <form class="sign-in-form">
+                    <h1 class="sign-in-form__title">Вход</h1>
+                    <div class="input-group sign-in-form__email-group">
+                        <label for="email" class="input-group__label">Email</label>
+                        <input
+                            id="email"
+                            class="input-group__input"
+                            type="email"
+                            placeholder="Введите email"
+                            name="email"
+                            autocomplete="off" />
+                    </div>
+                    <div class="input-group sign-in-form__password-group">
+                        <label for="email" class="input-group__label">Пароль</label>
+                        <input
+                            class="input-group__input"
+                            type="password"
+                            placeholder="Введите пароль"
+                            name="password"
+                            autocomplete="off" />
+                    </div>
+                    <div class="checkbox-group sign-in-form__agreement-group">
+                        <input id="agreement" class="checkbox-group__checkbox" type="checkbox" name="agreement" />
+                        <label for="agreement" class="checkbox-group__label"
+                            >Я согласен получать обновления на почту</label
+                        >
+                    </div>
+                    <button class="btn sign-in-form__sign-in">Войти</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
