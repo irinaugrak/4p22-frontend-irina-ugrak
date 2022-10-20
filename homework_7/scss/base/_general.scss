@@ -1,0 +1,22 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 16px;
+  min-width: 320px;
+  color: $color-main;
+  background-color: $color-dark-blue;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  padding: 15px;
+}
+
+
+

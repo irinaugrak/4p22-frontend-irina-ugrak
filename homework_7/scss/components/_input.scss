@@ -1,0 +1,52 @@
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__label {
+        font-weight: 700;
+        font-size: calc(16 * $coeff-1440-w);
+        line-height: calc(16 * $coeff-1440-w);
+        padding-left: 9px;
+    }
+
+    &__input {
+        padding: 10px;
+        border-radius: calc(10 * $coeff-1440-w);
+        border: 2px solid $color-main;
+        font-weight: 700;
+        font-size: calc(28 * $coeff-1440-w);
+        line-height: calc(36 * $coeff-1440-w);
+        color: $color-main;
+        padding: 5px 13px;
+        
+        &::placeholder {
+            color: $color-grey;
+        }
+
+        &:focus {
+            box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .input-group {
+
+        &__label {
+            font-size: calc(24 * $coeff-768-w);
+            line-height: calc(28 * $coeff-768-w);
+        }
+
+        &__input {
+            border-radius: calc(10 * $coeff-768-w);
+            font-size: calc(28 * $coeff-768-w);
+            line-height: calc(36 * $coeff-768-w);
+        }
+    }
+}
+
+
+
