@@ -713,4 +713,137 @@ template {
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  min-width: 320px;
+  color: #787878;
+}
+
+.container {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #FFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  bottom: 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 12px;
+}
+.header-inner__left {
+  display: flex;
+  align-items: center;
+}
+.header-inner__right {
+  display: flex;
+  align-items: center;
+}
+.header-inner__title {
+  font-family: "Inter";
+  font-size: 36px;
+  line-height: 44px;
+  margin-left: 30px;
+}
+.header-inner__link {
+  font-family: "Inter";
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration: none;
+  color: #787878;
+}
+.header-inner__link:hover {
+  color: #CCCCCC;
+}
+.header-inner__sign-in {
+  margin-left: 40px;
+}
+
+.main__form-sign {
+  margin: 125px auto 0;
+}
+
+.form-sign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  padding: 26px 46px 35px;
+  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+}
+.form-sign__title {
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 17px;
+}
+.form-sign__input-group {
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+.form-sign__sign-in {
+  margin-top: 42px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.input-group__label {
+  font-size: 16px;
+  line-height: 16px;
+  padding-left: 8px;
+}
+.input-group__input {
+  border: 2px solid #787878;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #787878;
+  padding: 5px 13px;
+  margin-top: 4px;
+}
+.input-group__input::-moz-placeholder {
+  color: #CCCCCC;
+}
+.input-group__input:-ms-input-placeholder {
+  color: #CCCCCC;
+}
+.input-group__input::placeholder {
+  color: #CCCCCC;
+}
+
+.btn {
+  min-width: 180px;
+  background-color: #1A226B;
+  padding: 16px 0;
+  color: #FFF;
+  font-size: 24px;
+  line-height: 16px;
+  font-weight: 700;
+  border: 2px solid #1A226B;
+}
+.btn:hover {
+  border: 2px solid #1A226B;
+  background-color: #FFF;
+  color: #1A226B;
 }/*# sourceMappingURL=style.css.map */

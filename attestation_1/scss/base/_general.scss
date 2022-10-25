@@ -1,0 +1,14 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  min-width: 320px;
+  color: $color-main;
+}
+
+.container {
+  max-width: 1380px;
+  margin: 0 auto;
+}

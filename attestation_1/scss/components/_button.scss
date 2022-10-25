@@ -1,0 +1,16 @@
+.btn {
+    min-width: 180px;
+    background-color: $color-dark-blue;
+    padding: 16px 0;
+    color: $color-white;
+    font-size: 24px;
+    line-height: 16px;
+    font-weight: 700;
+    border: 2px solid $color-dark-blue;
+    
+    &:hover {
+        border: 2px solid $color-dark-blue;
+        background-color: $color-white;
+        color: $color-dark-blue;
+    }
+}

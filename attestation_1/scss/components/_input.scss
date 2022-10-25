@@ -1,0 +1,25 @@
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__label {
+        font-size: 16px;
+        line-height: 16px;
+        padding-left: 8px;
+    }
+
+    &__input {
+        border: 2px solid $color-main;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 36px;
+        color: $color-main;
+        padding: 5px 13px;
+        margin-top: 4px;
+        
+        &::placeholder {
+            color: $color-grey;
+        }
+    }
+}

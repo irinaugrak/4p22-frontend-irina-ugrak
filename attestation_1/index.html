@@ -12,12 +12,12 @@
             <div class="container">
                 <div class="header-inner">
                     <div class="header-inner__left">
-                        <a href="./"><img src="./img/logo.png" alt="Логотип" /></a>
-                        <div>PCS Frontend</div>
+                        <a href="./" class="header-inner__logo"><img src="./img/logo.png" alt="Логотип" /></a>
+                        <div class="header-inner__title">PCS Frontend</div>
                     </div>
                     <div class="header-inner__right">
-                        <div>Регистрация</div>
-                        <div>Вход</div>
+                        <a href="" class="header-inner__sign-up header-inner__link">Регистрация</a>
+                        <a href="" class="header-inner__sign-in header-inner__link">Вход</a>
                     </div>
                 </div>
             </div>
@@ -25,9 +25,9 @@
         <main class="main">
             <div class="container">
                 <div class="wrapper">
-                    <form action="">
-                        <h1 class="sign-in-form__title">Вход</h1>
-                        <div class="input-group sign-in-form__email-group">
+                    <form action="" class="main__form-sign form-sign">
+                        <h1 class="form-sign__title">Вход</h1>
+                        <div class="input-group form-sign__input-group">
                             <label for="email" class="input-group__label">Email</label>
                             <input
                                 id="email"
@@ -37,7 +37,7 @@
                                 name="email"
                                 autocomplete="off" />
                         </div>
-                        <div class="input-group sign-in-form__password-group">
+                        <div class="input-group form-sign__input-group">
                             <label for="email" class="input-group__label">Пароль</label>
                             <input
                                 class="input-group__input"
@@ -46,7 +46,7 @@
                                 name="password"
                                 autocomplete="off" />
                         </div>
-                        <button class="btn sign-in-form__sign-in">Войти</button>
+                        <button class="btn form-sign__sign-in">Войти</button>
                     </form>
                 </div>
             </div>
