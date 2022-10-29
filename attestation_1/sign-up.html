@@ -1,13 +1,99 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Innopolis University</title>
-</head>
-<body>
-    <header class="header"></header>
-    <main class="main"></main>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Innopolis University</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header-inner">
+                    <div class="header-inner__left">
+                        <a href="./" class="header-inner__logo"><img src="./img/logo.png" alt="Логотип" /></a>
+                        <div class="header-inner__title">PCS Frontend</div>
+                    </div>
+                    <div class="header-inner__right">
+                        <div class="header-inner__menu">
+                            <a href="./sign-up.html" class="header-inner__link header-inner__sign-up">Регистрация</a>
+                            <a href="./" class="header-inner__link header-inner__sign-in">Вход</a>
+                        </div>
+                        <div class="header-inner__burger burger">
+                            <img src="./img/menu.svg" class="burger__img" width="25px" alt="Меню" />
+                            <ul class="burger__list">
+                                <li class="burger__item">
+                                    <a class="burger__link header-inner__sign-up" href="./sign-up.html">Регистрация</a>
+                                </li>
+                                <li class="burger__item">
+                                    <a class="burger__link header-inner__sign-in" href="./">Вход</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="wrapper">
+                    <form action="" class="main__form-sign form-sign">
+                        <h1 class="form-sign__title">Регистрация</h1>
+                        <div class="input-group form-sign__input-group">
+                            <label for="email" class="input-group__label">Email</label>
+                            <input
+                                id="email"
+                                class="input-group__input"
+                                type="email"
+                                placeholder="Введите email"
+                                name="email"
+                                autocomplete="off" />
+                        </div>
+                        <div class="input-group form-sign__input-group">
+                            <label for="email" class="input-group__label">Пароль</label>
+                            <input
+                                class="input-group__input"
+                                type="password"
+                                placeholder="Введите пароль"
+                                name="password"
+                                autocomplete="off" />
+                        </div>
+                        <div class="input-group form-sign__input-group">
+                            <label for="email" class="input-group__label">Подтверждение пароля</label>
+                            <input
+                                class="input-group__input"
+                                type="password"
+                                placeholder="Подтвердите пароль"
+                                name="confirm-password"
+                                autocomplete="off" />
+                        </div>
+                        <div class="radio-group form-sign__radio-group">
+                            <label class="radio-group__label">Пол</label>
+                            <div class="radio-group__element">
+                                <input id="man" type="radio" class="radio-group__input" name="gender" />
+                                <label for="man" class="radio-group__element-label">Мужчина</label>
+                            </div>
+                            <div class="radio-group__element">
+                                <input id="woman" type="radio" class="radio-group__input" name="gender" />
+                                <label for="woman" class="radio-group__element-label">Женщина</label>
+                            </div>
+                        </div>
+                        <div class="textarea-group form-sign__textarea-group">
+                            <label for="about" class="textarea-group__label">О себе</label>
+                            <textarea id="about" class="textarea-group__input" name="about">Расскажите о себе</textarea>
+                        </div>
+                        <div class="checkbox-group form-sign__checkbox-group">
+                            <input id="agreement" type="checkbox" class="checkbox-group__input" name="agreement" />
+                            <label for="agreement" class="checkbox-group__label"
+                                >Я согласен получать обновления на почту</label
+                            >
+                        </div>
+                        <button class="btn form-sign__sign-in">Регистрация</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <script src="./script.js"></script>
+    </body>
 </html>
