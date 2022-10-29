@@ -19,6 +19,10 @@
     align-items: center;
     padding: 20px 0 12px;
 
+    &__burger {
+        display: none;
+    }
+
     &__left {
         display: flex;
         align-items: center;
@@ -27,6 +31,11 @@
     &__right {
         display: flex;
         align-items: center;
+    }
+
+    &__logo img {
+        width: 222px;
+        height: auto;
     }
 
     &__title {
@@ -46,9 +55,65 @@
         &:hover {
             color: $color-grey;
         }
-    }
 
-    &__sign-in {
-        margin-left: 40px;
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+
+        &.header-inner__sign_active {
+            color: $color-dark-blue;
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .header-inner {
+        &__title {
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        &__link {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header-inner {
+        &__logo img {
+            width: 124px;
+        }
+
+        &__title {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        &__link {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .header-inner {
+        &__menu {
+            display: none;
+        }
+
+        &__burger {
+            display: block;
+        }
+
+        &__title {
+            font-size: 20px;
+            line-height: 24px;
+            margin-left: 10px;
+        }
     }
 }

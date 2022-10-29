@@ -16,8 +16,21 @@
                         <div class="header-inner__title">PCS Frontend</div>
                     </div>
                     <div class="header-inner__right">
-                        <a href="" class="header-inner__sign-up header-inner__link">Регистрация</a>
-                        <a href="" class="header-inner__sign-in header-inner__link">Вход</a>
+                        <div class="header-inner__menu">
+                            <a href="./sign-up.html" class="header-inner__link header-inner__sign-up">Регистрация</a>
+                            <a href="./" class="header-inner__link header-inner__sign-in">Вход</a>
+                        </div>
+                        <div class="header-inner__burger burger">
+                            <img src="./img/menu.svg" class="burger__img" width="25px" alt="Меню" />
+                            <ul class="burger__list">
+                                <li class="burger__item">
+                                    <a class="burger__link header-inner__sign-up" href="./sign-up.html">Регистрация</a>
+                                </li>
+                                <li class="burger__item">
+                                    <a class="burger__link header-inner__sign-in" href="./">Вход</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -51,5 +64,6 @@
                 </div>
             </div>
         </main>
+        <script src="./script.js"></script>
     </body>
 </html>
