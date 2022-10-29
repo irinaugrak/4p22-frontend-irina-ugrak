@@ -1,0 +1,39 @@
+.burger {
+    position: relative;
+
+    &__img {
+        cursor: pointer;
+    }
+
+    &__list {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 27px;
+        padding: 20px;
+        z-index: 1;
+        background: $color-light-grey;
+        
+        &_visible {
+            display: block;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        color: $color-main;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &__link {
+        &.header-inner__sign_active {
+            color: $color-dark-blue;
+        }
+    }
+}
