@@ -714,6 +714,10 @@ template {
   font-style: normal;
   font-display: swap;
 }
+html {
+  margin-right: calc(-1 * (100vw - 100%));
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -737,11 +741,6 @@ body {
   .container {
     max-width: 95.8333333333vw;
     margin: 0 auto;
-  }
-}
-@media screen and (min-width: 1200px) {
-  html {
-    margin-right: calc(-1 * (100vw - 100%));
   }
 }
 .header {
