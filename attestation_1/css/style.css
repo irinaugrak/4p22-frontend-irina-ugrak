@@ -739,6 +739,11 @@ body {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 1200px) {
+  html {
+    margin-right: calc(-1 * (100vw - 100%));
+  }
+}
 .header {
   position: relative;
 }
@@ -820,6 +825,9 @@ body {
   }
 }
 @media screen and (max-width: 575px) {
+  .header-inner {
+    padding: 20px 5px 12px;
+  }
   .header-inner__menu {
     display: none;
   }
@@ -1113,6 +1121,15 @@ body {
   padding: 6px 11px;
   height: 246px;
   resize: none;
+}
+.textarea-group__input::-moz-placeholder {
+  color: #CCCCCC;
+}
+.textarea-group__input:-ms-input-placeholder {
+  color: #CCCCCC;
+}
+.textarea-group__input::placeholder {
+  color: #CCCCCC;
 }
 
 @media screen and (max-width: 767px) {

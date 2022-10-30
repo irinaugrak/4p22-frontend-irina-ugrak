@@ -18,6 +18,10 @@
         padding: 6px 11px;
         height: 246px;
         resize: none;
+
+        &::placeholder {
+            color: $color-grey;
+        }
     }
 }
 
