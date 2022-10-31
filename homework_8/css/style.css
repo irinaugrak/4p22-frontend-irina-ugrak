@@ -1,0 +1,20 @@
+.animation-bg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1A226B;
+  height: 350px;
+}
+.bg-ex-stars {
+  background: url('../img/stars.png');
+  background-position: 0 0;
+  background-repeat: repeat;
+  animation: animated-bg 100s linear infinite;
+  width: 100%;
+  height: 350px;
+}
+@keyframes animated-bg {
+  from { background-position: 0 0; }
+  to { background-position: 0 1000px; }
+}
+     
