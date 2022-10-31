@@ -4,7 +4,7 @@ function makeFibonacciFunction() {
     console.log(a);
     console.log(b);
     return () => {
-        let c = a + b;
+        const c = a + b;
         console.log(c);
         a = b;
         b = c;
