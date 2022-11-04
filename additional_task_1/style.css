@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+    color: #222124;
+    background-color: #eee;
+}
+
+.name {
+    font-size: 24px;
+    color: #F2292F;
+}
+
+.key {
+    color: #00FF02;
+}
+
+.key-obj {
+    color: #FE691E;
+}
+
+.value {
+    color: #00CFFA;
+}
+
+.str {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}

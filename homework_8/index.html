@@ -12,19 +12,29 @@
             <div class="bg-ex-stars"></div>
         </div>
         <main class="main">
-            <h1>Упрощенный калькулятор</h1>
-            <div class="wrapper">
-                <form action="">
-                    <div>Здесь будут сообщения об ошибках</div>
-                    <div>
-                        <input type="text" />
-                        <input type="text" />
-                        <input type="text" />
-                        <span>=</span>
-                        <input type="text" />
-                    </div>
-                    <button>Рассчитать</button>
-                </form>
+            <div class="main__stars">
+                <h1 class="main__title">Упрощенный калькулятор</h1>
+                <div class="wrapper">
+                    <form action="" class="form">
+                        <div class="form__alert">Здесь будут сообщения об ошибках</div>
+                        <div class="form__input-group input-group">
+                            <input class="input-group__input input-group__num" type="text" />
+                            <div class="input-group__sign-group sign-group">
+                                <input class="input-group__input input-group__sign sign-group__sign" type="text" />
+                                <ul class="sign-group__list">
+                                    <li class="sign-group__item">+</li>
+                                    <li class="sign-group__item">-</li>
+                                    <li class="sign-group__item">*</li>
+                                    <li class="sign-group__item">/</li>
+                                </ul>
+                            </div>
+                            <input class="input-group__input input-group__num" type="text" />
+                            <span class="input-group__equals">=</span>
+                            <input class="input-group__input input-group__num" type="text" />
+                        </div>
+                        <button>Рассчитать</button>
+                    </form>
+                </div>
             </div>
         </main>
     </body>
