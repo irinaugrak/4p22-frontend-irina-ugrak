@@ -1,6 +1,92 @@
 .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     &__alert {
         margin-bottom: 30px;
+        align-self: flex-start;
+        width: 100%;
+        background-color: $color-error;
+        padding: 20px;
+        border-radius: 7px;
+        opacity: 0;
+        color: $color-main;
+        display: flex;
+        align-items: center;
+
+        &_active {
+            opacity: 1;
+        }
+    }
+
+    &__alert-img {
+        margin-right: 15px;
+    }
+
+    &__group {
+        display: flex;
+        align-items: center;
+    }
+
+    &__input {
+        padding: 10px;
+        background-color: $color-dark-blue;
+        border: 1px solid $color-white;
+        border-radius: 7px;
+        color: $color-white;
+    }
+    
+    &__num {
+        max-width: 180px;
+    }
+
+    &__equals {
+        color: $color-white;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-weight: 700;
+    }
+
+    &__sign-group {
+        position: relative;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    &__sign {
+        max-width: 70px;
+        cursor: pointer;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    &__sign-list {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        border: 1px solid $color-white;
+        padding: 10px;
+        border-radius: 7px;
+        margin-top: 5px;
+        opacity: 0;
+        background-color: $color-dark-blue;
+
+        &_active {
+            opacity: 1;
+        }
+    }
+
+    &__sign-item {
+        cursor: pointer;
+        font-weight: bold;
+        text-align: center;
+        padding: 5px;
+    }
+
+    &__btn {
+        margin-top: 140px;
+        background-color: $color-dark-blue;
     }
 }
 

@@ -12,5 +12,15 @@ body {
   line-height: 16px;
   min-width: 320px;
   color: $color-white;
+  background-color: $color-dark-blue;;
+}
+
+.container {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  padding: 0 15px;
 }
 
