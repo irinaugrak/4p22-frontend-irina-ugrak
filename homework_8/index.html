@@ -4,38 +4,39 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
         <title>Упрощенный калькулятор</title>
-        <style></style>
     </head>
     <body>
-        <div class="animation-bg">
-            <div class="bg-ex-stars"></div>
-        </div>
         <main class="main">
-            <div class="main__stars">
-                <h1 class="main__title">Упрощенный калькулятор</h1>
+            <div class="container">
                 <div class="wrapper">
+                    <h1 class="main__title">Упрощенный калькулятор</h1>
                     <form action="" class="form">
-                        <div class="form__alert">Здесь будут сообщения об ошибках</div>
-                        <div class="form__input-group input-group">
-                            <input class="input-group__input input-group__num" type="text" />
-                            <div class="input-group__sign-group sign-group">
-                                <input class="input-group__input input-group__sign sign-group__sign" type="text" />
-                                <ul class="sign-group__list">
-                                    <li class="sign-group__item">+</li>
-                                    <li class="sign-group__item">-</li>
-                                    <li class="sign-group__item">*</li>
-                                    <li class="sign-group__item">/</li>
+                        <div id="alert-block" class="form__alert">
+                            <img src="./img/attention.png" class="form__alert-img" width="40px" alt="cancel" />
+                            <div id="alert"></div>
+                        </div>
+                        <div class="form__group">
+                            <input id="num-1" class="form__input form__num" type="text" autocomplete="off" />
+                            <div class="form__sign-group">
+                                <input id="sign" class="form__input form__sign" type="text" autocomplete="off" />
+                                <ul id="sign-list" class="form__sign-list">
+                                    <li class="form__sign-item">+</li>
+                                    <li class="form__sign-item">-</li>
+                                    <li class="form__sign-item">&times;</li>
+                                    <li class="form__sign-item">/</li>
                                 </ul>
                             </div>
-                            <input class="input-group__input input-group__num" type="text" />
-                            <span class="input-group__equals">=</span>
-                            <input class="input-group__input input-group__num" type="text" />
+                            <input id="num-2" class="form__input form__num" type="text" autocomplete="off" />
+                            <span class="form__equals">=</span>
+                            <input id="res" disabled class="form__input form__num" type="text" />
                         </div>
-                        <button>Рассчитать</button>
+                        <button id="btn" class="form__btn btn">Рассчитать</button>
                     </form>
                 </div>
             </div>
         </main>
+        <script src="./js/script.js"></script>
     </body>
 </html>
