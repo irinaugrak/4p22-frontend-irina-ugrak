@@ -13,14 +13,12 @@ signInput.addEventListener('click', () => {
     }
 });
 
-
 signItems.forEach((item, index) => {
     item.addEventListener('click', (event) => {
         signInput.value = event.target.innerText;
         signList.classList.remove('form__sign-list_active');
     });
 });
-
 
 btn.addEventListener('click', (event) => {
     event.preventDefault();
@@ -37,8 +35,6 @@ btn.addEventListener('click', (event) => {
 
     res.value = '';
 
-    console.log(sign);
-
     switch (sign) {
         case '+':
             result = Number(num1) + Number(num2);
@@ -46,7 +42,7 @@ btn.addEventListener('click', (event) => {
         case '-':
             result = Number(num1) - Number(num2);
             break;
-        case '×':
+        case '*':
             result = Number(num1) * Number(num2);
             break;
         case '/':
@@ -68,7 +64,7 @@ btn.addEventListener('click', (event) => {
         alertMessage = alertMessage + 'Не введен знак\n';
     }
     
-    if(sign !== '' && sign !== '+' && sign !== '-' && sign !== '×' && sign !== '/') {
+    if(sign !== '' && sign !== '+' && sign !== '-' && sign !== '*' && sign !== '/') {
         alertMessage = alertMessage + 'Программа не поддерживает такую операцию\n';
     }
 
