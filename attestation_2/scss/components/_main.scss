@@ -1,0 +1,21 @@
+.main {
+    &__form-sign {
+        margin: 125px auto 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main {
+        &__form-sign {
+            margin: 96px auto 0;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .main {
+        &__form-sign {
+            margin: 40px auto 0;
+        }
+    }
+}
