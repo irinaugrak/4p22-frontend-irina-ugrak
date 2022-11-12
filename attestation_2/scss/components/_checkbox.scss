@@ -1,0 +1,40 @@
+.checkbox-group {
+    position: relative;
+    display: flex;
+    
+    &__input {
+        opacity: 0;
+    }
+
+    &__input:checked + &__label::after {
+        background-color: $color-main;
+    }
+
+    &__label {
+        margin-left: 17px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+            border: 2px solid $color-main;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 6px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 12px;
+            height: 12px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+html {
+    margin-right: calc(-1 * (100vw - 100%));
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  min-width: 320px;
+  color: $color-main;
+}
+
+.container {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 1439px) {
+  .container {
+    max-width: calc(1380 * $coeff-1440-w);
+    margin: 0 auto;
+  }
+}
+
