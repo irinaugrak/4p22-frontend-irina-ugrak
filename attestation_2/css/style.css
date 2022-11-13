@@ -934,13 +934,24 @@ body {
 }
 .input-group {
   display: flex;
+  position: relative;
   flex-direction: column;
   width: 100%;
 }
 .input-group__label {
+  position: relative;
   font-size: 16px;
   line-height: 16px;
   padding-left: 8px;
+}
+.input-group__star {
+  position: absolute;
+  left: -3px;
+}
+.input-group__error {
+  position: absolute;
+  right: 0;
+  color: #EE2424;
 }
 .input-group__input {
   border: 2px solid #787878;
@@ -950,6 +961,9 @@ body {
   color: #787878;
   padding: 5px 13px;
   margin-top: 4px;
+}
+.input-group__input_error {
+  border-color: #EE2424;
 }
 .input-group__input::-moz-placeholder {
   color: #CCCCCC;
