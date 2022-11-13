@@ -46,8 +46,12 @@
                     <form action="" class="main__form-sign form-sign">
                         <h1 class="form-sign__title">Регистрация</h1>
                         <div class="input-group form-sign__input-group">
-                            <label for="email" class="input-group__label"><span class="input-group__star">*</span>Email</label>
-                            <span id="email-alert" class="input-group__error"></span>
+                            <div class="input-group__label-group">
+                                <label for="email" class="input-group__label"
+                                    ><span class="input-group__star">*</span>Email</label
+                                >
+                                <span id="email-alert" class="input-group__error"></span>
+                            </div>
                             <input
                                 id="email"
                                 class="input-group__input"
@@ -57,8 +61,12 @@
                                 autocomplete="off" />
                         </div>
                         <div class="input-group form-sign__input-group">
-                            <label for="password" class="input-group__label"><span class="input-group__star">*</span>Пароль</label>
-                            <span id="password-alert" class="input-group__error"></span>
+                            <div class="input-group__label-group">
+                                <label for="password" class="input-group__label"
+                                    ><span class="input-group__star">*</span>Пароль</label
+                                >
+                                <span id="password-alert" class="input-group__error"></span>
+                            </div>
                             <input
                                 id="password"
                                 class="input-group__input"
@@ -68,10 +76,14 @@
                                 autocomplete="off" />
                         </div>
                         <div class="input-group form-sign__input-group">
-                            <label for="confirm-password" class="input-group__label"><span class="input-group__star">*</span>Подтверждение пароля</label>
-                            <span id="confirm-password-alert" class="input-group__error"></span>
+                            <div class="input-group__label-group">
+                                <label for="confirm-password" class="input-group__label"
+                                    ><span class="input-group__star">*</span>Подтверждение пароля</label
+                                >
+                                <span id="confirm-password-alert" class="input-group__error"></span>
+                            </div>
                             <input
-                                id = "confirm-password"
+                                id="confirm-password"
                                 class="input-group__input"
                                 type="password"
                                 placeholder="Подтвердите пароль"
@@ -91,7 +103,11 @@
                         </div>
                         <div class="textarea-group form-sign__textarea-group">
                             <label for="about" class="textarea-group__label">О себе</label>
-                            <textarea id="about" class="textarea-group__input" name="about" placeholder="Расскажите о себе"></textarea>
+                            <textarea
+                                id="about"
+                                class="textarea-group__input"
+                                name="about"
+                                placeholder="Расскажите о себе"></textarea>
                         </div>
                         <div class="checkbox-group form-sign__checkbox-group">
                             <input id="agreement" type="checkbox" class="checkbox-group__input" name="agreement" />
