@@ -986,6 +986,13 @@ body {
   }
 }
 @media screen and (max-width: 575px) {
+  .input-group__label-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .input-group__error {
+    position: relative;
+  }
   .input-group__label {
     font-size: 14px;
     line-height: 14px;
