@@ -46,7 +46,8 @@
                     <form action="" class="main__form-sign form-sign">
                         <h1 class="form-sign__title">Регистрация</h1>
                         <div class="input-group form-sign__input-group">
-                            <label for="email" class="input-group__label">Email</label>
+                            <label for="email" class="input-group__label"><span class="input-group__star">*</span>Email</label>
+                            <span id="email-alert" class="input-group__error"></span>
                             <input
                                 id="email"
                                 class="input-group__input"
@@ -56,8 +57,10 @@
                                 autocomplete="off" />
                         </div>
                         <div class="input-group form-sign__input-group">
-                            <label for="email" class="input-group__label">Пароль</label>
+                            <label for="password" class="input-group__label"><span class="input-group__star">*</span>Пароль</label>
+                            <span id="password-alert" class="input-group__error"></span>
                             <input
+                                id="password"
                                 class="input-group__input"
                                 type="password"
                                 placeholder="Введите пароль"
@@ -65,8 +68,10 @@
                                 autocomplete="off" />
                         </div>
                         <div class="input-group form-sign__input-group">
-                            <label for="email" class="input-group__label">Подтверждение пароля</label>
+                            <label for="confirm-password" class="input-group__label"><span class="input-group__star">*</span>Подтверждение пароля</label>
+                            <span id="confirm-password-alert" class="input-group__error"></span>
                             <input
+                                id = "confirm-password"
                                 class="input-group__input"
                                 type="password"
                                 placeholder="Подтвердите пароль"
@@ -94,7 +99,7 @@
                                 >Я согласен получать обновления на почту</label
                             >
                         </div>
-                        <button class="btn form-sign__sign-in">Регистрация</button>
+                        <button id="btn-registration" class="btn form-sign__sign-in">Регистрация</button>
                     </form>
                 </div>
             </div>

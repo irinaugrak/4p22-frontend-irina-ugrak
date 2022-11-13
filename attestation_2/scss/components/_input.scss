@@ -1,12 +1,25 @@
 .input-group {
     display: flex;
+    position: relative;
     flex-direction: column;
     width: 100%;
 
     &__label {
+        position: relative;
         font-size: 16px;
         line-height: 16px;
         padding-left: 8px;
+    }
+
+    &__star {
+        position: absolute;
+        left: -3px;
+    }
+
+    &__error {
+        position: absolute;
+        right: 0;
+        color: $color-error;
     }
 
     &__input {
@@ -17,6 +30,10 @@
         color: $color-main;
         padding: 5px 13px;
         margin-top: 4px;
+
+        &_error {
+            border-color: $color-error;
+        }
         
         &::placeholder {
             color: $color-grey;
